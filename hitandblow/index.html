@@ -6,6 +6,11 @@
     <title>Unity WebGL Player | HitAndBlow</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+      body {
+        background-color: #c3d1d1;
+      }
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -24,14 +29,20 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">HitAndBlow</div>
       </div>
+      <br>
+      <br>
+      <br>
+      <p>使用した素材：</p>
+      <div>数字の画像：<a href='https://opengameart.org/content/clock-digits' target="_blank" rel="noopener">https://opengameart.org/content/clock-digits</a></div>
+      <div>フォント：<a href='https://fonts.google.com/noto/specimen/Noto+Sans+JP?subset=japanese' target="_blank" rel="noopener">https://fonts.google.com/noto/specimen/Noto+Sans+JP?subset=japanese</a></div>
     </div>
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGL Builds.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL Builds.data.br",
-        frameworkUrl: buildUrl + "/WebGL Builds.framework.js.br",
-        codeUrl: buildUrl + "/WebGL Builds.wasm.br",
+        dataUrl: buildUrl + "/WebGL Builds.data.unityweb",
+        frameworkUrl: buildUrl + "/WebGL Builds.framework.js.unityweb",
+        codeUrl: buildUrl + "/WebGL Builds.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "HitAndBlow",
